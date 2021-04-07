@@ -1,5 +1,6 @@
 patch:
   schema_list:
+    - schema: luna_pinyin_simp      # 朙月拼音 简化字
     - schema: double_pinyin_flypy # 小鹤双拼
     - schema: luna_pinyin # 全拼
     # - schema: double_pinyin # 自然码
@@ -10,8 +11,8 @@ patch:
     - ascii_punct
     - simplification
     - zh_hans
-    - emoji_suggestion
-  menu/page_size: 8
+    # - emoji_suggestion
+  menu/page_size: 9
   ascii_composer: # 设置caps、shift、control等键的作用
     good_old_caps_lock: true # 若为true，caps只切换大小写
     switch_key:
@@ -29,6 +30,8 @@ patch:
     - { when: has_menu, accept: equal, send: Page_Down }
     - { when: paging, accept: bracketleft, send: Page_Up }
     - { when: has_menu, accept: bracketright, send: Page_Down }
+    - { when: paging, accept: comma, send: Page_Up }
+    - { when: has_menu, accept: period, send: Page_Down }
     # - {accept: "Control+p", send: Up, when: composing}
     # - {accept: "Control+n", send: Down, when: composing}
     # - {accept: "Control+b", send: Left, when: composing}
