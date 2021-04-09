@@ -1,3 +1,13 @@
+## Install
+
+1，安装Rime输入法
+2，安装文件，执行：
+```
+./install.sh
+```
+3，切换到rime输入法，然后点击Deploy即可
+
+
 # Rime 鼠须管输入法傻瓜式配置指南
   OS: macOS 10.14.6, Windows 10 LSTC 2019
   
